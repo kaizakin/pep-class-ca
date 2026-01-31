@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student List</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      const container = document.getElementById("container");
+
+      const ul = document.createElement("ul");
+
+      const students = [
+        { name: "Karthik", marks: 85 },
+        { name: "Rahul", marks: 78 },
+        { name: "Sneha", marks: 92 },
+      ];
+
+      students.forEach((student) => {
+        const li = document.createElement("li");
+        li.textContent = `${student.name} – ${student.marks}`;
+
+        li.style.backgroundColor = "lightblue";
+        li.style.padding = "8px";
+        li.style.margin = "5px";
+
+        ul.appendChild(li);
+      });
+
+      container.appendChild(ul);
+    </script>
+  </body>
+</html>

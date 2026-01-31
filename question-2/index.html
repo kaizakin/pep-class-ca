@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dynamic Heading</title>
+    <style>
+      .main-heading {
+        font-family: Arial, sans-serif;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+
+    <script>
+      const heading = document.getElementById("heading");
+
+      heading.textContent = "Welcome to JavaScript DOM Manipulation";
+
+      heading.style.color = "white";
+
+      heading.style.backgroundColor = "teal";
+
+      heading.style.textAlign = "center";
+
+      heading.style.padding = "15px";
+
+      heading.classList.add("main-heading");
+    </script>
+  </body>
+</html>
